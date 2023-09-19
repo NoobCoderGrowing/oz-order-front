@@ -1,0 +1,197 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.importBtn{
+  position: absolute;
+  right: 5%;
+  background-color: #1677ff;
+  height: 32px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 4px 15px;
+  border-radius: 6px;
+  box-sizing: border-box;  
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  min-height: 120px;
+  margin-top: 80px;
+  margin-bottom: 400px;
+  border-spacing: 0px;
+}
+
+table thead tr {
+  background-color: #1677ff;
+  color: #ffffff;
+  text-align: left;
+}
+
+table th,
+table td {
+    padding: 15px 5px;
+    box-sizing: border-box;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f6f6f6;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #1677ff;
+}
+
+table tbody tr.active-row {
+  font-weight: bold;
+  color: #4bbd7f;
+}
+
+table td:first-child input {
+  width: 50px;
+}
+
+table td:nth-child(2) input {
+  width: 120px;
+}
+
+table .edit-cell-container button {
+  border-radius: 50px;
+  height: 26px;
+  width: 26px;
+  border: 1px solid #ccc;
+}
+
+table .footer-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7px;
+}
+
+table .add-button {
+  color: #1677ff;
+  cursor: pointer;
+}
+
+table .remove-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e44747;
+}
+
+table .footer-buttons button {
+  border: none;
+  background-color: #1677ff;
+  width: 140px;
+  height: 32px;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  
+
+}
+
+table .edit-cell-action button[name='edit'] {
+  color: #ffb918;
+}
+
+table .edit-cell-action button[name='cancel'] {
+  color: #7b7b7b;
+}
+
+table .edit-cell-action button[name='done'] {
+  color: #4bbd7f;
+}
+
+table .edit-cell-action button[name='remove'] {
+  color: red;
+  background-color: rgb(230, 208, 208);
+}
+
+table input, select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    max-width:  70px;
+    box-sizing: border-box;
+}
+
+table .edit-cell-action {
+  display: flex;
+    gap: 5px;
+}
+
+table .edit-cell-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 4px;
+}
+
+table input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+}
+
+table input {
+  width: 100px;
+}
+
+.silentAlert{
+  position: absolute;
+  display: none;
+}
+
+.submitBtn{
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  margin-bottom: 300px;
+}
+
+.alertMessage{
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  margin-bottom: 340px;
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+@keyframes example {
+  from {
+    opacity: 0%;
+    margin-bottom: 300px;
+  }
+  to{
+    opacity: 100%;
+    margin-bottom: 340px;
+  }
+}

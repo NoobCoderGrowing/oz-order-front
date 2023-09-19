@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../assets/background.jpg");
+    background-repeat:  no-repeat;
+    background-blend-mode: normal;
+    background-size: auto, cover;
+    background-position: center center;
+    box-sizing: border-box;
+    margin-bottom: 80px; 
+    position: relative;
+    justify-content: center;
+}
+
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 75px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+}
+
+.welcome{
+    position: absolute;
+    top: 50%;
+    font-family: 'Crimson Text', serif;
+    font-size: 40px;
+    color: rgb(247, 247, 247);
+}
